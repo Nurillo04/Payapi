@@ -4,14 +4,3 @@
 @import './global';
 @import './blocks/header';
 @import './blocks/hero';
-.btn {
-    @include button1;
-}
-
-.btn2 {
-    @include button2;
-}
-
-h1 {
-    color: $charmpink97;
-}
