@@ -1,0 +1,70 @@
+.work {
+    padding: 100px 165px;
+    background-color: $mirajblue2F;
+    &__wrapper {
+        @include flex(space-between);
+        gap: 131px;
+    }
+    &__title {
+        font-family: $DMserif;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.369231px;
+        color: $whiteFE;
+        margin: 24px 0px 32px 0px;
+    }
+    &__text {
+        max-width: 576px;
+        height: 112px;
+        margin-bottom: 70px
+    }
+    &__btn {
+        @include button2;
+        border: 1px solid #FBFCFE;
+    }
+    &__list {
+        max-width: 764px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 62px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .work {
+        padding: 95px 116px;
+        &__wrapper {
+            flex-direction: column-reverse;
+            gap: 58px;
+        }
+        &__left {
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .work {
+        padding: 85px 20px;
+        &__wrapper {
+            flex-direction: column-reverse;
+            gap: 74px;
+        }
+        &__left {
+            text-align: center;
+        }
+        &__title {
+            font-family: $DMserif;
+            font-size: 32px;
+            line-height: 36px;
+            letter-spacing: -0.369231px;
+            color: $whiteFE;
+            margin: 24px 0px 32px 0px;
+        }
+        &__text {
+            max-width: 327px;
+            height: 140px;
+            margin-bottom: 60px
+        }
+    }
+}
