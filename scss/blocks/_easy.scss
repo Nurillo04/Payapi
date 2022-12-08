@@ -1,0 +1,114 @@
+.easy {
+    margin-top: 150px;
+    &__wrapper {
+        @include flex(space-between);
+        gap: 125px;
+    }
+    &__left {
+        max-width: 445px;
+        background-color: $mirajblue2F;
+        box-shadow: 25px 25px 80px rgba(54, 83, 107, 0.300727);
+        border-radius: 8px;
+    }
+    &__top {
+        background: #2E3F4D;
+        border-radius: 8px 8px 0px 0px;
+        display: flex;
+        padding: 12px 368px 12px 16px;
+        gap: 7px;
+    }
+    &__span {
+        display: flex;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: $darkpink70;
+        &:nth-child(2) {
+            background: #527695;
+        }
+        &:nth-child(3) {
+            background: $juanblue6B;
+        }
+    }
+    &__codes {
+        padding: 32px;
+    }
+    &__code {
+        font-family: $Roboto;
+        font-size: 13px;
+        line-height: 20px;
+        color: $whiteFE;
+    }
+    &__right {
+        padding: 2px;
+    }
+    &__titile2 {
+        font-family: $DMserif;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.369231px;
+        color: $juanblue6B;
+    }
+    &__subtitile {
+        max-width: 445px;
+        font-family: $PuplicRegular;
+        font-size: 15px;
+        line-height: 28px;
+        color: $lightjuanblue94;
+        margin-top: 24px;
+    }
+}
+
+@media only screen and(max-width:768px) {
+    .easy {
+        margin-top: 100px;
+        &__wrapper {
+            flex-direction: column;
+            gap: 48px;
+        }
+        &__left {
+            max-width: 391px;
+        }
+        &__top {
+            padding: 10px 324px 10px 13px;
+            gap: 4px;
+        }
+        &__subtitile {
+            max-width: 573px;
+        }
+        &__right {
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and(max-width:375px) {
+    .easy {
+        margin-top: 80px;
+        &__subtitile {
+            max-width: 328px;
+        }
+        &__left {
+            max-width: 328px;
+        }
+        &__top {
+            padding: 8px 271px 8px 12px;
+            gap: 5px;
+        }
+        &__span {
+            width: 11px;
+            height: 11px;
+        }
+        &__codes {
+            padding: 17px;
+        }
+        &__code {
+            font-size: 9px;
+            line-height: 16px;
+        }
+        &__titile2 {
+            font-size: 36px;
+            line-height: 36px;
+        }
+    }
+}

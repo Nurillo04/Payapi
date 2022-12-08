@@ -1,0 +1,67 @@
+.footer {
+    margin-top: 96px;
+    padding: 42px;
+    background: $mirajblue2F;
+    &__wrapper {
+        @include flex (space-between);
+    }
+    &__left {
+        @include flex (space-between);
+        gap: 84px;
+    }
+    &__list {
+        @include flex (space-between);
+        gap: 40px;
+    }
+    &__item a {
+        font-family: $PuplicBold;
+        font-size: 15px;
+        line-height: 18px;
+        color: $whiteFE;
+        mix-blend-mode: normal;
+        opacity: 0.7;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &__right svg {
+        margin-left: 24px;
+    }
+}
+
+.footer-img:hover {
+    fill: $charmpink97;
+}
+
+.footer-img:active {
+    fill: aqua;
+}
+
+@media only screen and(max-width:768px) {
+    .footer {
+        &__left {
+            gap: 64px;
+        }
+    }
+}
+
+@media only screen and(max-width:375px) {
+    .footer {
+        padding: 46px;
+        &__wrapper {
+            flex-direction: column;
+            gap: 41px;
+        }
+        &__left {
+            flex-direction: column;
+            gap: 31px;
+        }
+        &__list {
+            flex-direction: column;
+            gap: 31px;
+        }
+        &__item a {
+            margin-top: 40px;
+        }
+    }
+}

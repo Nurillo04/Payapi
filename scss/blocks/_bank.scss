@@ -1,0 +1,50 @@
+.bank {
+    margin-top: 90px;
+    &__list {
+        @include flex(space-between);
+        gap: 30px;
+    }
+    &__item {
+        text-align: center;
+        max-width: 350px;
+    }
+    &__title {
+        font-family: $PuplicBold;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        letter-spacing: -0.138462px;
+        color: $juanblue6B;
+        margin: 32px 0px 16px 0px;
+    }
+    &__subtitile {
+        font-family: $PuplicRegular;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        letter-spacing: -0.115385px;
+        color: $lightjuanblue94;
+    }
+}
+
+@media only screen and(max-width:768px) {
+    .bank {
+        &__item {
+            text-align: center;
+            max-width: 223px;
+        }
+    }
+}
+
+@media only screen and(max-width:375px) {
+    .bank {
+        margin-top: 80px;
+        &__list {
+            flex-direction: column;
+            gap: 48px;
+        }
+        &__item {
+            max-width: 328px;
+        }
+    }
+}

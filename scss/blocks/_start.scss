@@ -1,17 +1,14 @@
-.hero {
-    padding: 24px 165px;
+.start {
+    margin-top: 96px;
     &__wrapper {
-        @include flex (space-between);
+        @include flex(space-between);
     }
     &__title {
-        max-width: 546px;
-        max-height: 243px;
         font-family: $DMserif;
-        font-size: 72px;
-        line-height: 72px;
-        letter-spacing: -0.553846px;
-        color: #36536B;
-        margin-bottom: 21px;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.369231px;
+        color: $juanblue6B;
     }
     &__input {
         padding: 16px 276px 14px 27px;
@@ -20,7 +17,7 @@
         border-radius: 24px;
         font-size: 15px;
         line-height: 18px;
-        color: $juanblue6B;
+        color: #36536B;
         mix-blend-mode: normal;
         opacity: 0.8;
         border: 0;
@@ -38,45 +35,26 @@
         position: absolute;
         z-index: 3;
     }
-    &__subtitle {
-        color: #6C8294;
-        margin: 16px 27px;
-        span {
-            font-weight: 600;
-        }
-    }
 }
 
 @media only screen and(max-width:768px) {
-    .hero {
-        padding: 24px 15px;
+    .start {
+        margin-top: 125px;
         &__wrapper {
-            flex-direction: column-reverse;
-            text-align: center;
-        }
-        &__title {
-            max-width: 546px;
-            max-height: 122px;
-            font-size: 48px;
-            line-height: 56px;
-            text-align: center;
+            flex-direction: column;
+            gap: 40px;
         }
     }
 }
 
 @media only screen and(max-width:375px) {
-    .hero {
-        padding: 0px 5px;
-        &__title {
-            max-width: 317px;
-            max-height: 108px;
-            font-size: 32px;
-            line-height: 36px;
-            text-align: center;
-            margin-left: 30px;
+    .start {
+        margin-top: 80px;
+        &__wrapper {
+            gap: 32px;
         }
         &__input {
-            padding: 14px 100px 14px 16px;
+            padding: 14px 120px 14px 16px;
             margin-top: 24px
         }
         &__subtitle {

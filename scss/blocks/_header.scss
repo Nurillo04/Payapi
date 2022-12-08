@@ -1,5 +1,9 @@
 .header {
     padding: 40px 165px;
+    // background-image: url(../../Images/png/header-bg.png);
+    // background-repeat: no-repeat;
+    // background-position: right;
+    // top: 220px;
     &__wrapper {
         @include flex (space-between);
     }

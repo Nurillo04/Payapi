@@ -1,10 +1,14 @@
 .work {
-    padding: 100px 165px;
     background-color: $mirajblue2F;
+    background-image: url(../../Images/png/work-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 100px 165px;
     &__wrapper {
         @include flex(space-between);
         gap: 131px;
     }
+    &__div {}
     &__title {
         font-family: $DMserif;
         font-size: 48px;
