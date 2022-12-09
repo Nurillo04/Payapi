@@ -32,6 +32,90 @@
     &__mlogo {
         display: none;
     }
+    &__right .mobil {
+        display: none;
+    }
+}
+
+.header__right {
+    position: relative;
+}
+
+.mobil {
+    top: 2px;
+    bottom: 100%;
+    width: 300px;
+    height: 667px;
+    position: fixed;
+    background: #2C6269;
+    transition: all 0.5s linear;
+    transform: translateX(100%);
+    background: #1B262F;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+}
+
+.mobil-item {
+    font-family: $PuplicBold;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FBFCFE;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    margin-top: 25px;
+    margin-bottom: 32px;
+    margin-left: -40px;
+}
+
+.mobil button {
+    display: block;
+    margin-left: 38px;
+}
+
+.mobil-hr {
+    width: 218px;
+    height: 1px;
+    margin-left: 12px;
+    background: #FBFCFE;
+    mix-blend-mode: normal;
+    opacity: 0.15;
+    margin-top: 24px;
+}
+
+.inputx {
+    width: 20px;
+    height: 20px;
+    margin-left: 200px;
+    font-size: 20px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 56px;
+    margin-bottom: 10px;
+}
+
+#input {
+    display: none;
+}
+
+#input2 {
+    display: none;
+}
+
+#input:checked~.mobil {
+    transform: translateX(-200px);
+}
+
+#input2:checked~.mobil {
+    transform: translateX(100%);
+}
+
+#input {
+    display: none;
+}
+
+#input:checked~.header__right img {
+    transform: rotateZ(180deg);
 }
 
 @media only screen and(max-width:768px) {
@@ -50,6 +134,9 @@
             display: none;
         }
         &__mlogo {
+            display: block;
+        }
+        &__right .mobil {
             display: block;
         }
     }
