@@ -2,6 +2,9 @@
     margin-top: 96px;
     padding: 42px;
     background: $mirajblue2F;
+    position: relative;
+    overflow-y: hidden;
+    z-index: 10;
     &__wrapper {
         @include flex (space-between);
     }
@@ -29,6 +32,16 @@
     }
 }
 
+.footer::before {
+    content: url(../Images/png/footer-bg.png);
+    position: absolute;
+    right: -424px;
+    width: 780px;
+    height: 780px;
+    z-index: -4;
+    top: 3px;
+}
+
 .footer-img:hover {
     fill: $charmpink97;
 }
@@ -41,6 +54,9 @@
     .footer {
         &__left {
             gap: 64px;
+        }
+        &::before {
+            display: none;
         }
     }
 }

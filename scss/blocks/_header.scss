@@ -1,9 +1,6 @@
 .header {
     padding: 40px 165px;
-    // background-image: url(../../Images/png/header-bg.png);
-    // background-repeat: no-repeat;
-    // background-position: right;
-    // top: 220px;
+    position: relative;
     &__wrapper {
         @include flex (space-between);
     }
@@ -19,7 +16,7 @@
         font-family: $PuplicBold;
         font-size: 15px;
         line-height: 18px;
-        color: #36536B;
+        color: $juanblue6B;
         mix-blend-mode: normal;
         opacity: 0.7;
         &:hover {
@@ -37,6 +34,16 @@
     }
 }
 
+.header::before {
+    content: url(../Images/png/header-bg.png);
+    position: absolute;
+    right: -150px;
+    width: 780px;
+    height: 780px;
+    top: -460px;
+    z-index: -4;
+}
+
 .header__right {
     position: relative;
 }
@@ -50,7 +57,7 @@
     background: #2C6269;
     transition: all 0.5s linear;
     transform: translateX(100%);
-    background: #1B262F;
+    background: $mirajblue2F;
     box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
 }
 
@@ -59,7 +66,7 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
-    color: #FBFCFE;
+    color: $whiteFE;
     mix-blend-mode: normal;
     opacity: 0.7;
     margin-top: 25px;
@@ -76,7 +83,7 @@
     width: 218px;
     height: 1px;
     margin-left: 12px;
-    background: #FBFCFE;
+    background: $whiteFE;
     mix-blend-mode: normal;
     opacity: 0.15;
     margin-top: 24px;
@@ -121,6 +128,9 @@
 @media only screen and(max-width:768px) {
     .header {
         padding: 45px 39px;
+        &::before {
+            display: none;
+        }
     }
 }
 

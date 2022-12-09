@@ -10,12 +10,12 @@
         font-size: 72px;
         line-height: 72px;
         letter-spacing: -0.553846px;
-        color: #36536B;
+        color: $juanblue6B;
         margin-bottom: 21px;
     }
     &__input {
         padding: 16px 276px 14px 27px;
-        background: #FBFCFE;
+        background: $whiteFE;
         box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
         border-radius: 24px;
         font-size: 15px;
@@ -24,9 +24,9 @@
         mix-blend-mode: normal;
         opacity: 0.8;
         border: 0;
-        background: #FBFCFE;
+        background: $whiteFE;
         &:hover {
-            color: #36536B;
+            color: $juanblue6B;
         }
     }
     &__form {
@@ -39,7 +39,7 @@
         z-index: 3;
     }
     &__subtitle {
-        color: #6C8294;
+        color: $lightjuanblue94;
         margin: 16px 27px;
         span {
             font-weight: 600;

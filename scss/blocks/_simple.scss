@@ -1,5 +1,6 @@
 .simple {
     margin-top: 162px;
+    position: relative;
     &__wrapper {
         @include flex(space-between);
     }
@@ -20,6 +21,15 @@
     }
 }
 
+.simple::before {
+    content: url(../Images/png/simple-bg.png);
+    position: absolute;
+    top: -123px;
+    right: -464px;
+    width: 780px;
+    height: 780px;
+}
+
 @media only screen and(max-width:768px) {
     .simple {
         margin-top: 100px;
@@ -31,6 +41,9 @@
         }
         &__left {
             text-align: center;
+        }
+        &::before {
+            display: none;
         }
     }
 }
